@@ -99,6 +99,14 @@ function checkMatch() {
 
     const cards = document.querySelectorAll('img') // busca todas las imagenes en el documento y las almacena en una variable cards
 
+    const optionOneId = cardChosenIds[0];
+    const optionTwoId = cardChosenIds[1];
+
+
+    if (optionOneId == optionTwoId) {
+        alert('asshole'); 
+    }
+
     if (cardsChosen[0] == cardsChosen[1]) {  // este compara si los nombres son iguales y si es asi lanza un alert
         message.innerHTML = `<h2 style="color:green">"Match!"</h2>`
         cards[cardChosenIds[0]].setAttribute('src', "./assets/images/pngwing.com.png" )
